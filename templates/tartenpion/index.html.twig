@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TartenpionController!{% endblock %}
+
+{% block body %}
+<style>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;/* 1rem = 10px*/
+}
+body{
+    font-size: 1.4rem;/* soit 14px*/
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.container{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E2337;
+}
+
+.banniere-titre{
+    margin-bottom: 1rem;
+}
+/*STYLE MENU DESKTOP*/
+.navbar-desktop{
+    height: 8rem;/*80pixels*/
+    line-height: 8rem;/*centre verticalement*/
+    text-align: center;/*centre horizontalement*/
+}
+/* style des liens*/
+.navbar-desktop a{
+    padding: 3rem;
+}
+</style>
+
+<div class="navbar-desktop">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+    </div>
+
+    <div class="container">
+        <div class="banniere-titre">
+            <h2>
+                Description Tartenpion Intranet
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, harum hic! Possimus, ea cupiditate. <br>
+                Aliquid voluptates asperiores sapiente labore magnam, ex fugiat, vel explicabo odit repellat <br>
+                quidem eius ipsum earum.</p>
+        </div>
+    </div>
+
+{% endblock %}
